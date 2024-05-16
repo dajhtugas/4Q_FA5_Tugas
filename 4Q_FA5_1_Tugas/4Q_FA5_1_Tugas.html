@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FA5</title>
+</head>
+<body>
+    <script>
+
+        var a;
+        var b;
+        var number = prompt("Please Input a Number");
+        
+
+        if(number==""){
+            alert("Refresh the page and enter a number!")
+
+        }
+
+
+            if(number%2==0){
+                for(let a=number;a> 0;a--){//triangle
+
+                    for (let b=1; b<=a; b++){
+                        document.write(a + " ");
+                    }
+
+                    document.write("</br>")
+
+                }
+            }
+
+            else if(number%2==1){
+                for(let a=number;a> 0;a--){//rectangle
+
+                    for (let b=1; b<= number; b++){
+                        document.write(a + " ");
+                     }
+
+                document.write("</br>")
+
+                }
+            }
+
+    </script>
+</body>
+</html>

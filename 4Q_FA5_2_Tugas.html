@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Another FA 5</title>
+</head>
+<body>
+
+    <p id="list"></p>
+
+    <form action="">
+        <label for="inputname">Name:</label>
+        <input type="text" id="inputname" name="inputname">
+
+        <button onclick="add()">Add</button>
+        <button onclick="remove()">Remove</button>
+    </form>
+
+    <script>
+        var arr=[];
+        var contact=document.getElementById("inputname").value;;
+        var output = "";
+
+        function add(){
+            arr.push(contact);
+        output = "";
+
+        for (x in arr){
+            output += arr[x] + " ";
+        }
+
+            document.getElementById("[h1-list]").innerHTML = output;
+        }
+
+        function remove(){
+            for (x in arr){
+        output += arr[x] + " ";
+        }
+
+        document.getElementById("[h1-list]").innerHTML = output;
+        }
+        
+    </script>
+
+    
+</body>
+</html>
