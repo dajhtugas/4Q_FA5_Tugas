@@ -24,7 +24,6 @@
 
         function add(){
             arr.push(contact);
-        output = "";
 
         for (x in arr){
             output += arr[x] + " ";
@@ -34,6 +33,7 @@
         }
 
         function remove(){
+            arr.pop(contact);
             for (x in arr){
         output += arr[x] + " ";
         }
